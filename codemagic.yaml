@@ -1,0 +1,11 @@
+workflows:
+  sample-workflow:
+    name: Build Python App
+    trigger:
+      event: push
+      branch:
+        - main
+    scripts:
+      - name: Install dependencies
+        script: pip install -r requirements.txt
+        
